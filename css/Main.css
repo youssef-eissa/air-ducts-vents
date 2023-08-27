@@ -80,7 +80,7 @@ ul{
 /* start TheHead*/
 
 .TheHead{
-    background-image: url('/assets/Cleaan.avif');
+    background-image: url('../assets/Cleaan.avif');
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
@@ -187,7 +187,7 @@ border-style: solid;
 @media (max-width:768px) {
     .TheHead{
         background-size: cover;
-        background-image: url('/assets/Sanitizing-Services-for-HVAC-System-1-2.jpg');
+        background-image: url('../assets/Sanitizing-Services-for-HVAC-System-1-2.jpg');
     }
         .TheHead p {
             color: white;
