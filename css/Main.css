@@ -1,0 +1,635 @@
+body{
+    background-color: #f2f2f2 !important;
+}
+
+:root{
+    --primary-bg: #e3e3e3
+}
+ul{
+    list-style: none;
+}
+
+
+/* start Navbar*/
+.NavBar{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+.NavBar .links{
+    display: flex;
+}
+.NavBar .links a{
+    text-decoration: none;
+    color: darkblue;
+    position: relative;
+    transition: 0.3s;
+    height: 100%;
+}
+.NavBar .links a::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: -5px;
+    left: 0;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.NavBar .links a:hover::before{
+    background-color: coral;
+}
+.NavBar .links a:hover{
+    background-color: #f3f3f3;
+}
+.menu{
+    color: gray;
+}
+
+@media (max-width:768px) {
+    .NavBar{
+        position: fixed;
+        position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2000;
+    }
+    .NavBar .links{
+        position: absolute;
+        background-color: white;
+        top: 60px;
+        z-index: 1000;
+        transition: 0.3s;
+        height: 0;
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .NavBar .links a{
+            height: auto;
+        }
+        .NavBar .toggle{
+            width: 390px;
+            height: 192px;
+        }
+}
+/* end Navbar*/
+
+/* start TheHead*/
+
+.TheHead{
+    background-image: url('/assets/Cleaan.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+.TheHead h1 span{
+    color: coral;
+    position: relative;
+}
+.TheHead p{
+    color: black;
+}
+.working-hours{
+    background-color: var(--primary-bg) ;
+    color: white;
+}
+.working-hours h1{
+color: coral;
+}
+.privileges{
+color: coral;
+    transition: 0.3s;
+}
+.hours{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.up{
+    background-color: black;
+    border-radius: 10px;
+    color: white !important;
+}
+.down{
+    background-color: crimson;
+    border-radius: 10px;
+    color: white !important;
+}
+.time {
+border-width: 1px;
+border-color: transparent transparent var(--primary-bg) transparent;
+border-style: solid;
+
+}
+.call{
+    color: crimson;
+}
+.call-num1{
+    text-decoration: none;
+    background-color: #101727;
+    border-radius: 10px;
+    color: white;
+}
+.call-num2{
+    text-decoration: none;
+        background-color: crimson;
+        border-radius: 10px;
+        color: white;
+    position: relative;
+}
+.call-num2::before{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-bg);
+    width: 100%;
+    height: 1px;
+    bottom: -10px;
+    left: 0;
+}
+.fa-phone-volume {
+    color: white;
+}
+.links a ,
+.footerlinks a{
+    color: gray;
+    transition: 0.3s;
+}
+.links a:nth-child(1):hover,
+.footerlinks a:nth-child(1):hover {
+    color: #3b5998;
+}
+.links a:nth-child(2):hover,
+.footerlinks a:nth-child(2):hover {
+    color: #db3236;
+}
+.links a:nth-child(3):hover,
+.footerlinks a:nth-child(3):hover{
+    color: #FF0000;
+}
+
+.links a:nth-child(4):hover,
+.footerlinks a:nth-child(4):hover {
+    color: #fc4f08;
+}
+.links a:nth-child(5):hover,
+.footerlinks a:nth-child(5):hover {
+    color: #0072b1;
+}
+.links a:nth-child(6):hover,
+.footerlinks a:nth-child(6):hover {
+    color: #c41200;
+}
+
+@media (max-width:768px) {
+    .TheHead{
+        background-size: cover;
+        background-image: url('/assets/Sanitizing-Services-for-HVAC-System-1-2.jpg');
+    }
+        .TheHead p {
+            color: white;
+        }
+}
+
+/* end TheHead*/
+
+/*start Cleaners*/
+.cleanersrow{
+    margin-bottom: 100px;
+}
+.CleanersRight{
+background-color: var(--primary-bg);
+position: relative;
+}
+
+.cleanersWord{
+    position: absolute;
+    color: coral;
+    left: -140px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    letter-spacing: 5px;
+    font-size: 56px;
+    font-style: italic;
+}
+.fa-truck-fast,
+.fa-thumbs-up{
+    color: coral;
+}
+.ReliableAndGuaranteed{
+    position: relative;
+    background-color: var(--primary-bg);
+}
+.ReliableAndGuaranteed::before{
+    position: absolute;
+    content: '';
+    background-color: coral;
+    width: 2px;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:768px) {
+    .cleanersWord{
+      display: none;
+    }
+        .ReliableAndGuaranteed::before{
+            transform: rotate(-90deg)  ;
+            top: 20px;
+            
+        }
+}
+
+/*end Cleaners*/
+
+/* start Questions */
+.questions{
+    margin-bottom: 200px;
+}
+
+.questions .left{
+    background-color: var(--primary-bg);
+}
+
+.FirstAnswer li{
+    position: relative;
+}
+.FirstAnswer li::before{
+    content: "\f00c";
+    position: absolute;
+font-family: "Font Awesome 5 Free";
+left: -20px;
+top: 0;
+font-weight: 900;
+color: coral;
+}
+.questions button{
+    background-color: crimson;
+    color: white;
+}
+.questions button:hover{
+    background-color: coral;
+    color: white;
+}
+.questions .left button {
+    font-size: 23px;
+}
+
+.backgroundMold{
+    background-color: rgb(0 0 0 / 90%);
+    width: 50%;
+    height: 110%;
+    right: -30px;
+    top: -35px;
+}
+@media (max-width:768px) {
+    .backgroundMold{
+        right: 0;
+    }
+}
+/* end Questions */
+
+/* start chooseUs */
+
+.chooseUs{
+    background-color: var(--primary-bg);
+    position: relative;
+    margin-bottom: 200px;
+}
+.chooseUs a{
+    position: absolute;
+    text-decoration: none;
+    color: coral;
+    font-size: 32px;
+    border: 1px solid gray;
+    width: auto;
+    right: 530px;
+    bottom: 50px;
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+    transition: 0.3s;
+}
+.chooseUs a:hover{
+    color: white;
+    background-color: crimson;
+}
+
+.chooseUs-text{
+    background-color: rgb(0 0 0 / 90%);
+color: white;
+}
+    
+
+.chooseUs-text ul li{
+position: relative;
+font-size: 18px;
+}
+.chooseUs-text ul li::before{
+content: "\f00c";
+position: absolute;
+font-family: "Font Awesome 5 Free";
+left: -20px;
+top: 0;
+font-weight: 900;
+color: coral;
+}
+.chooseUs-text p{
+font-size: 18px;
+}
+.chooseUs-text span:nth-child(1){
+    font-size: 56px;
+    color: coral;
+    letter-spacing: 5px;
+}
+.chooseUs-text span:nth-of-type(2) {
+    font-size: 46px;
+    color: rgb(245 245 245 / 10%);
+    letter-spacing: 3px;
+    display: flex;
+    align-self: flex-end;
+
+}
+@media (max-width:768px) {
+    .chooseUs a {
+            right: 50%;
+            bottom: 10px;
+            transform: translateX(50%);
+            width: 100%;
+            font-size: 16px;
+            width: auto;
+            padding: 5px 10px;
+        }
+    .chooseUs-text span:nth-child(1) {
+        font-size: 22px;
+    }
+        .chooseUs-text p {
+            font-size: 16px;
+        }
+                .chooseUs-text ul li {
+                    position: relative;
+                    font-size: 16px;
+        }
+        .chooseUs-text span:nth-of-type(2) {
+    font-size: 22px;
+    color: rgb(245 245 245 / 10%);
+    letter-spacing: 3px;
+    display: flex;
+    align-self: flex-end;
+    
+
+}
+}
+
+/* end chooseUs */
+
+/* start benefits */
+
+.benefits{
+    background-image: url('../assets/How_Often_You_Should_Clean_Air_Ducts_for_Good_Indoor_Air_Quality.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 801px;
+    margin-bottom: 200px;
+}
+.benefits .benefits-text{
+    line-height: 2;
+    font-size: 20px;
+}
+.benefits a{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+    transition: 0.3s;
+    font-size: 20px;
+}
+.benefits a:hover{
+    color: white;
+    background-color: crimson;
+}
+@media (max-width:768px) {
+    .benefits .benefits-text{
+        font-size: 16px;
+    }
+}
+/* end benefits */
+
+
+/* start testimonials */
+.testimonials{
+    margin-bottom: 200px;
+}
+.testimonials .left{
+    background-color: var(--primary-bg);
+    
+}
+.testimonials .right{
+    margin-top: -50px;
+}
+
+.testimonials .right .client {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.testimonials .right .client .text{
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 50px;
+    background-color: coral;
+    color: white;
+}
+
+.testimonials .right .client:nth-child(2) .text{
+left: 500px;
+
+}
+
+.testimonials .right .client:nth-child(3) .text{
+    top: 400px;
+        left: 50px;
+}
+
+.testimonials .right .client .text span{
+    position: relative;
+}
+
+.testimonials .right .client .text span::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+.carousel-item{
+    height: 728px;
+}
+@media (max-width:768px) {
+
+.testimonials .right .client:nth-child(1) .text {
+top: 60%;
+font-size: 16px;
+left: 50%;
+transform: translateX(-50%);
+    }
+    .testimonials .right .client:nth-child(2) .text {
+top: 60%;
+font-size: 16px;
+left: 50%;
+transform: translateX(-50%);
+    }
+    .testimonials .right .client:nth-child(3) .text {
+top: 60%;
+font-size: 16px;
+left: 50%;
+transform: translateX(-50%);
+    }
+}
+
+/* end testimonials */
+
+/* start Contact */
+.contact-us{
+    margin-bottom: 200px;
+}
+.contact-us form span{
+    display: none;
+}
+.contact-us form{
+    margin-top: 100px;
+    
+}
+.Contact-Form{
+    background-color: rgb(0 0 0 / 90%);}
+.contact-us form input,
+.contact-us form textarea{
+    border: none;
+    margin-bottom: 30px;
+    background-color: rgb(128 128 128 / 30%);
+    font-size: 20px;
+    color: white;
+}
+.contact-us form textarea{
+    resize: none;
+}
+
+.contact-us form input:focus,
+.contact-us form textarea:focus{
+    outline: none;
+}
+.contact-us form input::placeholder,
+.contact-us form textarea::placeholder{
+    color: white;
+}
+
+.contact-us form button{
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    transition: 0.3s;
+}
+.contact-us form button:hover{
+    background-color: coral;
+}
+
+.box .icon{
+    color: black;
+}
+.box h2{
+    color: coral;
+}
+.box span{
+    font-size: 25px;
+}
+
+.box span a{
+    color: black;
+}
+.info h2{
+    color: white;
+    letter-spacing: 4px;
+}
+.info{
+    background-color: crimson;
+}
+/* end Contact */
+
+/* start services */
+.services{
+    margin-bottom: 200px;
+}
+.services-box {
+    background-color: var(--primary-bg);
+}
+.services-box ul li {
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.services-box ul li:hover{
+    color: coral;
+}
+.services-box ul li::before{
+    content: "\f00c";
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        left: -20px;
+        top: 0;
+        font-weight: 900;
+        color: coral;
+}
+@media (max-width:768px) {
+    .services-box ul:not(:last-child) {
+        position: relative;
+    }
+    .services-box ul:not(:last-child)::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: crimson;
+        bottom: 0px;
+        left: 0;
+    }
+}
+
+/* end services */
+
+/* start locations */
+
+.cities{
+    height: 300px;
+    overflow: scroll;
+}
+.locations .left{
+    color: white;
+    background-color: rgb(0 0 0 / 90%);
+}
+.locations .right {
+    color: white;
+    background-color: crimson;
+}
+.locations .cities span{
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.locations .cities span:hover{
+    background-color: white;
+    color: black;
+}
+
+/* end locations */
